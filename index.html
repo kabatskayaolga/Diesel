@@ -13,30 +13,7 @@
     <link media="all" href="./css/main.css?ver=0.001" rel="stylesheet" type="text/css" />
     <link media="all" href="./css/timer.css" rel="stylesheet" type="text/css" />
 
-    <script src="ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-
-				<style>
-                    .m1modal{ display:none !important;}
-                </style>
-                
-        <script src="js/jquery.js" type="text/javascript"></script>
-        <script src="js/plugins.js" type="text/javascript"></script>
-        
-        
-                <script src="//static.best-gooods.ru/js/popup-m1.js?v=4" type="text/javascript"></script>
-
-                <script type="text/javascript">
-                $(function(){
-                    M1.initComebacker(3000);
-                    var M1Text = {
-                        'validation_name': 'Укажите корректные ФИО.',
-                        'validation_phone1': 'Номер телефона может содержать только цифры, символы "+", "-", "(", ")" и пробелы.',
-                        'validation_phone2': 'В вашем телефоне слишком мало цифр.',
-                        'comebacker_text': 'ВНИМАНИЕ'
-                    };
-                    M1.validateAndSendForm(false, M1Text);
-                });
-                </script>
+    
         
 
 
@@ -161,12 +138,7 @@
     				</div>
     			
     			</div>
-    		<script>
-    		$(".s_img").click(function(){
-    			img = $(this).attr("src");
-    			$(".o_img").attr("src",img);
-    		});
-    		</script>
+    	
     		</div>
 	   </div>
 	
@@ -316,8 +288,36 @@
         </div>    
    </div>
 </div>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
 
+                <style>
+                    .m1modal{ display:none !important;}
+                </style>
+                
+        <script src="js/jquery.js" type="text/javascript"></script>
+        <script src="js/plugins.js" type="text/javascript"></script>
+        
+        
+                <script src="//static.best-gooods.ru/js/popup-m1.js?v=4" type="text/javascript"></script>
 
+                <script type="text/javascript">
+                $(function(){
+                    M1.initComebacker(3000);
+                    var M1Text = {
+                        'validation_name': 'Укажите корректные ФИО.',
+                        'validation_phone1': 'Номер телефона может содержать только цифры, символы "+", "-", "(", ")" и пробелы.',
+                        'validation_phone2': 'В вашем телефоне слишком мало цифр.',
+                        'comebacker_text': 'ВНИМАНИЕ'
+                    };
+                    M1.validateAndSendForm(false, M1Text);
+                });
+                </script>
+    <script>
+            $(".s_img").click(function(){
+                img = $(this).attr("src");
+                $(".o_img").attr("src",img);
+            });
+            </script>
 <!-- Yandex.Metrika counter -->
 
 <!-- /Yandex.Metrika counter -->
