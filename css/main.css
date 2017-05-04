@@ -904,7 +904,7 @@ width: 364px;
         visibility: hidden;
     }
 }
-@media (max-width: 501px){
+@media (max-width: 519px){
     .b6 img{
         width: 100%;
         vertical-align: top;
