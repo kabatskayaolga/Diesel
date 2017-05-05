@@ -136,7 +136,7 @@ h2 {
 
 .b1 {
     height: 571px;
-    background: url(../img/b1.jpg) center top no-repeat;
+    background: url(../img/b1.jpg) center top no-repeat, url(../img/b1.jpg) center bottom no-repeat;
 }
 .b1 .right {
     float: right;
@@ -693,21 +693,24 @@ width: 364px;
     }
 
     .b1{
-        /*height: auto;*/
-        background-size: cover;
+        background-size: cover
     }
     .b1 .right {
          /*float: initial; */
          width: initial; 
+         
     }
 }
-@media (max-width: 468px){
+@media (max-width: 500px){
     .b1{
-        /*height: auto;*/
-        background-position: 17% top;
+        height: auto;
+        background-position: 30% -40px, 74% bottom;
+        background-size: initial;
     }
     .b1 .right{
         float: initial;
+        padding-top: 400px;
+        padding-bottom: 100px
     }
     .b1 h1{
         font-size: 25px;
