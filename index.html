@@ -24,7 +24,7 @@
 	
 	</style>
 <div class="top_line">
-	Бесплатная доставка по Одессе     |    Без предоплаты. Оплата при получении заказа  | <span>+ 073 408 22 92</span> |
+	Бесплатная доставка по Одессе Без предоплаты Оплата при получении заказа <span>+ 073 408 22 92</span>
 
 
 	
@@ -103,7 +103,7 @@
 		<div class="bline"></div>
 	   <div class="clear-fix">
     		<div class="left">
-    			<ul>
+    			<ul class="first">
     				<li>Бренд: <br/><span>Diesel Brave</span></li>
     				<li>Корпус: <br/><span>Нержавеющая сталь</span></li>
     				<li>Водозащита: <br/><span>30 м.</span></li>
@@ -211,7 +211,7 @@
             <div class="top">
                 <div class="left">
                     <div class="sale">
-                        <p class="percent ms900">-56%</p>
+                        <p class="percent ms900">-54%</p>
                         <p class="text upp ms900">Акция! <br><span class="ms500">только сегодня!</span></p>
                     </div>
                     <div class="price white center">
@@ -288,6 +288,15 @@
         </div>    
    </div>
 </div>
+<div class="basket">
+    <img src="img/basket.png" alt="">
+    <div class="text">
+        <h4>Маргарита Ковальчук </h4>
+        <h6>г. Днепропетровск</h6>
+        <p>только что заказал(а) DIESEL BRAVE  (1 шт.)  на 1380 грн.</p>
+    </div>
+    
+</div>
 <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
 
                 <style>
@@ -317,6 +326,64 @@
                 img = $(this).attr("src");
                 $(".o_img").attr("src",img);
             });
+            </script>
+
+            <script>
+            var obj =[
+                {
+                    name: 'Дарья Воробей',
+                    city: 'г. Одесса'
+                },
+                {
+                    name: 'Сергей Сербиненко ',
+                    city: 'г. Одесса'
+                },
+                 {
+                    name: 'Александра Кравченко ',
+                    city: 'г. Одесса'
+                },
+                 {
+                    name: 'Мария Прокопенко ',
+                    city: 'г. Одесса'
+                },
+                 {
+                    name: 'Мария Полищук ',
+                    city: 'г. Одесса'
+                }
+            ]; 
+            var counter = 0;
+            var speed = 5000;
+            $(document).ready(function(){
+               
+                    setInterval(function() { 
+                        if($('.basket').css('opacity') === '1'){
+                          
+                            $('.basket').css('opacity', '0');
+                                                
+                        } else{
+                            counter++;
+                            if(counter === obj.length){
+                                counter = 0;
+                            }
+                            $('.basket h4').text(obj[counter].name)
+                            $('.basket h6').text(obj[counter].city)   
+                            $('.basket').css('opacity', '1');             
+                        }
+                    }, speed);
+                        
+                // for (var i = 0; i < inputEl.length; i++){
+                //     if(inputEl[i].hasAttribute('remove-value')){
+                //         if(inputEl[i].getAttribute('type') === 'tel'){
+                //             inputEl[i].value = defaultValue;
+                //         } else{
+                //             inputEl[i].value =  '';
+                //         }
+                //     } 
+                // }       
+                // }
+            
+            })
+
             </script>
     <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44542777 = new Ya.Metrika({ id:44542777, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44542777" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
     <script>
